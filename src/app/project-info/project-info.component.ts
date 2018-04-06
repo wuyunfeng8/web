@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router, ActivatedRoute, Params } from "@angular/router";
 import { switchMap } from "rxjs/operators";
 import { Observable } from "rxjs/Observable";
@@ -9,6 +9,7 @@ import { projects } from "../items-data";
   styleUrls: ["./project-info.component.scss"]
 })
 export class ProjectInfoComponent implements OnInit {
+  @ViewChild("video") videoplayer: any;
   private item: string;
   private you: boolean = false;
   private project: any;
@@ -36,6 +37,6 @@ export class ProjectInfoComponent implements OnInit {
   change = item => {
     this.title = item.title;
     this.url = item.url;
-    document.getElementById("video").load();
+    this.videoplayer.nativeElement.load();
   };
 }
