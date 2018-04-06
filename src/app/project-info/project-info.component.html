@@ -1,0 +1,19 @@
+<p *ngIf="!you">
+    {{ item }} 该课程还没有内容
+</p>
+<div *ngIf="you" class="ui container info">
+    <h1>{{ title }}</h1>
+    <div class="video">
+        <video controls width="100%" *ngIf="yuan" id="video">
+            <source src="{{ url }}" type="video/mp4"> 你的浏览器不支持html5播放器
+        </video>
+    </div>
+    <div class="info_text">
+        <p>{{ project.name}} 目录下的课程</p>
+        <ul>
+            <li *ngFor="let item of project.view" (click)="change(item)">
+                {{item.title}}
+            </li>
+        </ul>
+    </div>
+</div>

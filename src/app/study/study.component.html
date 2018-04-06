@@ -1,0 +1,21 @@
+<div class="ui container study">
+  <div class="ui link cards stackable three column grid">
+    <div class="card" *ngFor="let item of items" (click)="goto(item.clname)">
+      <div class="image">
+        <img src="{{ item.image }}">
+      </div>
+      <div class="content">
+        <div class="header">{{ item.name }}</div>
+        <!-- <div class="meta">
+          <a>好友</a>
+        </div> -->
+        <div class="description">{{ item.text }}</div>
+      </div>
+      <div class="extra content">
+        <span class="right floated"> {{ item.time }} 更新 </span>
+        <span>
+          <i class="user icon"></i> {{ item.people }} 人观看 </span>
+      </div>
+    </div>
+  </div>
+</div>

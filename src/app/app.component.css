@@ -1,0 +1,6 @@
+.main {
+  width: 100%;
+  padding-top: 20px;
+  background: #f0f0f0;
+  min-height: calc(100vh - 64px);
+}

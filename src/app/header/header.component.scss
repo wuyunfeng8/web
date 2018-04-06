@@ -1,0 +1,33 @@
+$menu_height: 64px;
+.menu {
+  width: 100%;
+  background: #3399cc;
+  height: $menu_height;
+  .nav_menu {
+    height: $menu_height;
+    display: flex;
+    align-items: center;
+    .left {
+      flex: 1;
+      display: flex;
+      .title {
+        padding: 11px 20px;
+        font-size: 28px;
+        color: #fff;
+      }
+      .nav {
+        flex: 1;
+        .item {
+          color: #fff;
+          font-size: 16px;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      .item {
+        margin-left: 10px;
+      }
+    }
+  }
+}
