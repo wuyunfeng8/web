@@ -2,5 +2,9 @@
   "/hello": {
     "target": "http://localhost:3333",
     "secure": false
+  },
+  "/posts": {
+    "target": "http://localhost:3333",
+    "secure": false
   }
 }

@@ -1,0 +1,6 @@
+<div class="ui container">
+  <div class="item" *ngFor="let item of postList" (click)='goto(item.id)'>
+    <h3>{{ item.title}}</h3>
+    <p>{{ item.content}}</p>
+  </div>
+</div>

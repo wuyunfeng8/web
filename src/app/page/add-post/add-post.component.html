@@ -1,0 +1,13 @@
+<div class="ui container">
+  <form class="ui form">
+    <div class="field">
+      <label>Title</label>
+      <input type="text" name="first-name" placeholder="Title" [(ngModel)]='title' name="title">
+    </div>
+    <div class="field">
+      <label>Text</label>
+      <textarea [(ngModel)]='test' name="test"></textarea>
+    </div>
+    <button class="ui button" type="button" (click)="addPost()">添加</button>
+  </form>
+</div>
