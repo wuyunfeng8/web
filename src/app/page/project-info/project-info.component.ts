@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { Router, ActivatedRoute, Params } from "@angular/router";
 import { switchMap } from "rxjs/operators";
 import { Observable } from "rxjs/Observable";
-import { projects } from "../items-data";
+import { projects } from "../../items-data";
 @Component({
   selector: "app-project-info",
   templateUrl: "./project-info.component.html",

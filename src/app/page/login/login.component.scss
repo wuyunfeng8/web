@@ -1,0 +1,15 @@
+.loginmain {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login {
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    .name {
+      font-size: 32px;
+    }
+  }
+}

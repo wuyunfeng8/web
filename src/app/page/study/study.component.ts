@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router, ActivatedRoute, ParamMap } from "@angular/router";
-import { Subject } from "../subject";
-import { subjects } from "../items-data";
+import { subjects } from "../../items-data";
 @Component({
   selector: "app-study",
   templateUrl: "./study.component.html",
