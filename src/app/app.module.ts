@@ -16,12 +16,14 @@ import { HomeService } from './server/home.service'
 import { LoginComponent } from './page/login/login.component'
 import { AddPostComponent } from './page/add-post/add-post.component'
 import { PostService } from './server/post.service'
-import { PostsComponent } from './page/posts/posts.component';
+import { PostsComponent } from './page/posts/posts.component'
 import { PostInfoComponent } from './page/post-info/post-info.component'
+import { LayoutComponent } from './layout/layout.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    LayoutComponent,
     HomeComponent,
     HeaderComponent,
     StudyComponent,
