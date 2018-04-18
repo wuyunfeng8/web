@@ -1,9 +1,5 @@
 {
-  "/hello": {
-    "target": "http://localhost:3333",
-    "secure": false
-  },
-  "/posts": {
+  "/api/v1": {
     "target": "http://localhost:3333",
     "secure": false
   }

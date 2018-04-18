@@ -12,12 +12,5 @@ export class HomeComponent implements OnInit {
 
   constructor(private homeServe: HomeService) {}
 
-  ngOnInit() {
-    this.homeServe.getItem().subscribe(
-      item => {
-        this.name = item[0].name
-      },
-      error => console.log('error=', error)
-    )
-  }
+  ngOnInit() {}
 }

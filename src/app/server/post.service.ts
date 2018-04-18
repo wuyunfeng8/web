@@ -7,12 +7,12 @@ export class PostService {
   constructor(private http: HttpClient) {}
 
   getPostItem(id) {
-    return this.http.get('/posts/' + id)
+    return this.http.get('/api/v1/posts/' + id)
   }
   getPostList() {
-    return this.http.get('/posts')
+    return this.http.get('/api/v1/posts')
   }
   addPost(title, text) {
-    return this.http.post('/posts', { title: title, content: text }).subscribe()
+    return this.http.post('/api/v1/posts', { title: title, content: text }).subscribe()
   }
 }
